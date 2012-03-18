@@ -16,8 +16,8 @@ public class dbconnect {
         {
             Class.forName("org.postgresql.Driver");
             String url="jdbc:postgresql://localhost:5432/pim";
-            String dbusername="postgres";
-            String dbpasswd="doggierules";
+            String dbusername="";	//Enter DB Username here
+            String dbpasswd="";		//Enter DB Password here
             Connection conn=DriverManager.getConnection(url,dbusername,dbpasswd);
             Statement st=conn.createStatement();
             System.out.println("Created");
